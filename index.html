@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fbfaf6">
+<meta name="description" content="The wedding celebration of Meera and Arjun. Join our families for a day of love, traditions and togetherness.">
+<title>Meera &amp; Arjun · Midnight Heirloom Wedding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap nav">
+  <a href="#top" class="logo">A<i>&amp;</i>K</a>
+  <nav>
+    <a href="#story">Our Story</a><a href="#schedule">Celebrations</a><a href="#venue">Venue</a><a href="#family">Families</a><a href="#faq">Details</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="style-toggle" id="style-toggle" type="button" aria-expanded="false" aria-controls="style-panel">✦ Customize</button>
+    <a href="#rsvp" class="btn">RSVP</a>
+  </div>
+</div></header>
+<aside class="style-panel" id="style-panel" aria-label="Wedding colour settings" hidden>
+  <div class="style-panel-head"><div><p class="eyebrow">Personalise the invitation</p><h2>Colour settings</h2></div><button type="button" class="panel-close" id="panel-close" aria-label="Close colour settings">×</button></div>
+  <p class="style-help">Choose a royal palette or fine-tune the colours below.</p>
+  <div class="palette-list" role="group" aria-label="Colour palettes">
+    <button type="button" class="palette" data-palette="emerald"><i style="--swatch:#123D32"></i><span>Emerald Palace</span></button>
+    <button type="button" class="palette" data-palette="ivory"><i style="--swatch:#8B7952"></i><span>Royal Ivory</span></button>
+    <button type="button" class="palette active" data-palette="burgundy"><i style="--swatch:#101D3B"></i><span>Midnight Heirloom</span></button>
+    <button type="button" class="palette" data-palette="midnight"><i style="--swatch:#263653"></i><span>Midnight Blue</span></button>
+  </div>
+  <div class="color-fields">
+    <label>Primary colour<input type="color" id="primary-color" value="#101D3B"></label>
+    <label>Accent / gold<input type="color" id="accent-color" value="#C9A45C"></label>
+    <label>Page background<input type="color" id="background-color" value="#F4F0E6"></label>
+  </div>
+  <div class="style-actions"><button type="button" class="btn ghost" id="reset-colors">Reset colours</button><button type="button" class="btn" id="save-colors">Save selection</button></div>
+  <p class="style-footnote" id="style-feedback" aria-live="polite">Your colour choices apply instantly on this device.</p>
+</aside>
+
+<main id="top">
+<div class="hero midnight-hero"><div class="royal-motif" aria-hidden="true">✥　❈　✥</div><div class="wrap">
+  <div class="frame">
+    <p class="eyebrow">With the blessings of our families</p>
+    <h1>Meera <em>&amp;</em> Arjun</h1>
+    <p class="meta">Sunday · 14 February 2027 · Udaipur, India</p>
+    <div class="orn">✦</div>
+    <p class="hero-note">Two families, one beautiful beginning.</p><div class="hero-flourish" aria-hidden="true">❧</div>
+    <div class="count" id="count" aria-label="Countdown to the wedding">
+      <div><b id="d">—</b><span>Days</span></div><div><b id="h">—</b><span>Hours</span></div><div><b id="m">—</b><span>Minutes</span></div><div><b id="s">—</b><span>Seconds</span></div>
+    </div>
+    <a href="#rsvp" class="btn">Celebrate With Us</a>
+  </div>
+</div></div>
+
+<section id="story" class="alt"><div class="wrap fade">
+  <div class="head"><p class="eyebrow">A note from the couple</p><h2>Our story, our forever</h2><div class="orn">✦</div></div>
+  <div class="story">
+    <p>Some stories begin with a meeting, others with a moment. Ours grew through shared conversations, little gestures, laughter and the quiet comfort of finding someone who feels like home.</p>
+    <p>With the love and blessings of our parents and elders, we are beginning a new chapter together. It would mean so much to have our favourite people around us as we celebrate this special day.</p>
+    <p class="sig">With love, Meera &amp; Arjun</p>
+  </div>
+</div></section>
+
+<section id="schedule"><div class="wrap fade">
+  <div class="head"><p class="eyebrow">Save the date</p><h2>Wedding day celebrations</h2><p>A day filled with tradition, blessings, joy and togetherness.</p><div class="orn">✦</div></div>
+  <div class="tl">
+    <div class="ev"><time>6:30 AM</time><div><h3>Welcoming &amp; Breakfast</h3><p>Join us as we welcome family and friends.</p></div></div>
+    <div class="ev"><time>7:15 AM</time><div><h3>Muhurtham</h3><p>The auspicious wedding ceremony and sacred traditions.</p></div></div>
+    <div class="ev"><time>9:00 AM</time><div><h3>Blessings &amp; Family Photos</h3><p>Share your wishes with the newlyweds and families.</p></div></div>
+    <div class="ev"><time>12:30 PM</time><div><h3>Wedding Lunch</h3><p>A festive traditional meal with everyone we love.</p></div></div>
+  </div>
+  <p class="schedule-note">Please arrive a little early so you can be seated before the Muhurtham.</p>
+</div></section>
+
+<section id="venue" class="alt"><div class="wrap fade">
+  <div class="head"><p class="eyebrow">Join us</p><h2>The wedding venue</h2><div class="orn">✦</div></div>
+  <div class="grid">
+    <div class="card"><p class="eyebrow">Wedding Ceremony</p><h3>The Grand Taj Hotel</h3><p>Lake Palace Road<br>Udaipur, Rajasthan, India</p><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=convention+centres+Hyderabad" target="_blank" rel="noopener">View Directions</a></div>
+    <div class="card"><p class="eyebrow">Accommodation</p><h3>For Out-of-town Guests</h3><p>For stay arrangements and nearby hotel suggestions, please contact either family.</p></div>
+    <div class="card"><p class="eyebrow">Travel</p><h3>Getting Here</h3><p>Hyderabad is connected by air, rail and road. Please plan your journey in advance and allow time for city traffic.</p></div>
+  </div>
+</div></section>
+
+<section id="family"><div class="wrap fade">
+  <div class="head"><p class="eyebrow">With the blessings of our families</p><h2>Two families, one celebration</h2><div class="orn">✦</div></div>
+  <div class="grid family-grid">
+    <div class="card"><p class="eyebrow">Bride's family</p><h3>Mr. &amp; Mrs. Rajendra Singh</h3><p>Request the pleasure of your company<br>as their daughter Meera begins a new journey.</p></div>
+    <div class="card"><p class="eyebrow">Groom's family</p><h3>Mr. &amp; Mrs. Mahendra Sharma</h3><p>Request your blessings and presence<br>as their son Arjun begins a new journey.</p></div>
+  </div>
+</div></section>
+
+<section id="rsvp" class="alt"><div class="wrap fade">
+  <div class="head"><p class="eyebrow">Kindly respond</p><h2>Will you join our celebration?</h2><p>Please reply by 25 January 2027.</p></div>
+  <form id="rsvp-form">
+    <label>Full name<input required name="name" autocomplete="name" placeholder="Enter your name"></label>
+    <div class="two">
+      <label>Will you attend?<select name="att"><option>Happily attending</option><option>Sorry, unable to attend</option></select></label>
+      <label>Number of guests<select name="n"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+    </div>
+    <label>Contact number<input name="phone" type="tel" placeholder="Your mobile number"></label>
+    <label>Message for the couple<textarea rows="3" name="msg" placeholder="Share your wishes (optional)"></textarea></label>
+    <button class="btn" type="submit">Send Response</button>
+  </form>
+  <div class="thanks" id="thanks"><h3>Thank you!</h3><p>Your response has been noted. We look forward to celebrating with you.</p></div>
+</div></section>
+
+<section id="share"><div class="wrap fade">
+  <div class="qr">
+    <div class="qrbox"><div id="qrcode"></div><div class="qrcap">Meera &amp; Arjun<br>14 · 02 · 2027</div></div>
+    <div>
+      <p class="eyebrow">Your digital invitation</p>
+      <h2 style="font-size:clamp(32px,4vw,44px);margin:10px 0 14px">A little invite to keep</h2>
+      <p style="color:var(--muted)">Scan this code to revisit the wedding details, timings and venue. You can also print it on your invitation card.</p>
+      <p style="margin-top:22px"><a class="btn ghost" href="#rsvp">Confirm Attendance</a></p>
+    </div>
+  </div>
+</div></section>
+
+<section id="faq" class="alt"><div class="wrap fade">
+  <div class="head"><p class="eyebrow">A few details</p><h2>Before you arrive</h2><div class="orn">✦</div></div>
+  <div class="faq">
+    <details><summary>What should I wear?</summary><p>Traditional Indian attire or elegant festive wear is welcome. We recommend comfortable footwear for the venue.</p></details>
+    <details><summary>Should I arrive before the Muhurtham?</summary><p>Yes, please arrive by 6:45 AM so you can settle in before the ceremony begins.</p></details>
+    <details><summary>Will food be served?</summary><p>Breakfast and a traditional wedding lunch will be served at the venue.</p></details>
+    <details><summary>May I bring children?</summary><p>Of course. Children are welcome to join the celebration with their families.</p></details>
+    <details><summary>Who can I contact for help?</summary><p>Please contact either family for directions, accommodation or any other assistance.</p></details>
+  </div>
+</div></section>
+</main>
+
+<footer>
+  <p class="eyebrow">Your presence will make our day complete</p>
+  <h2>Meera &amp; Arjun</h2>
+  <div class="orn">✦</div>
+  <p>14 FEBRUARY 2027 · HYDERABAD, INDIA</p>
+  <p class="footer-blessing">With love, gratitude &amp; blessings</p>
+</footer>
+<div id="toast" role="status"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
